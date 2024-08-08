@@ -7,6 +7,239 @@
     <title>LUV IMPORT & EXPORT</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    html{
+    transition: 15ms;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    background: url(image/bg-gradient.jpg);
+    overflow-x: hidden;
+}
+
+
+
+/* navigation */
+.navbar{
+    background-color:rgb(223,224,220) ;
+    border-radius: 20px;
+    ul{
+        overflow: auto;
+    } 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li{
+        font-size: larger;
+        list-style: none;
+        float: right;
+        padding: 25px 100px;
+        :hover{
+            background-color: cornsilk;
+            color: crimson;
+        }
+
+    }
+}
+div .logo{
+    float: left;
+ }
+
+/* HOME */
+.home{
+    padding-top: 10px;
+    width: 100%;
+    background: url(image/himg.jpg);
+    /* background-position: ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.htext{
+    font-size: 100px;
+    text-align: center;
+    background: linear-gradient(to top, red, crimson);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.htext{
+    position: relative;
+}
+
+/* SERVICE */
+
+.services{
+    margin: 15px;
+    width: 100%;
+    
+
+}
+
+.drone_main{
+    width: 100%;
+    padding-left: 5%;
+    overflow: auto;
+
+    .drone{
+        width: 50%;
+        float: left;
+
+
+        
+    img{
+        border-radius: 25px;
+    }
+}
+
+    .drone_info{
+        width: 50%;
+        float: right;
+        text-align: center;
+    }
+}
+
+.scooter_main{
+    width: 100%;
+    padding-left: 5%;
+    overflow: auto;
+    overflow-x: hidden;
+
+    .scooter{
+        width: 50%;
+        float: right;
+
+
+        img{
+            border-radius: 25px;
+        }
+    
+    }
+
+    .scooter_info{
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+}
+
+.truck_main{
+    padding-left: 5%;
+    width: 100%;
+    overflow: auto;
+
+    .truck{
+        width: 50%;
+        float: left;
+
+
+        img{
+            border-radius: 25px;
+        }
+    
+
+    }
+
+    .truck_info{
+        width: 50%;
+        float: right;
+        text-align: center;
+    }
+}
+
+
+/* ABOUT AND RATINGS */
+
+#About_Ratings{
+
+    width: 100%;
+    height: auto;
+    overflow: auto;
+
+}
+
+.about{
+    width: 54%;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px grey;
+
+    
+}
+
+.rating_parent{
+    display: grid;
+    float: right;
+    scroll-snap-type: none;
+    padding: 5px;
+    gap: 5px;
+    width: 45%;
+    height: 477px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* For Mobile Phone*/
+@media screen and (max-width: 600px) {
+    .rating_parent{
+      width: 96%;
+      height: 201px;
+    }
+  }
+
+.rating{
+    height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* CONTACT */
+
+#Contact{
+    background: linear-gradient(grey 25%,black);
+    padding: 2px;
+    margin-top: 2px;
+
+
+}
+
+.cont_text{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 2px;
+    padding: 2px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 2px;
+}
+
+.cn{
+    text-decoration: none;
+    color: aqua;
+}
+</style>
 
 <body>
     <!-- navigation bar -->
